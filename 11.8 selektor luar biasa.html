@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> DOM Javasripct </title>
+</head>
+<body>
+<h1> Belajar DOM Javascipt </h1>
+<img src="man.png" width=300>
+
+<div id="box1"></div>
+
+<div class="boxes"></div>
+<div class="boxes"></div>
+<div class="boxes"></div>
+
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>Javascript</li>
+    <div></div>
+</ul>
+
+<script>
+	//selektor
+	document.getElementById('box1').innerHTML = "Sekolah Koding";
+
+	/*document.getElementsByClassName('boxes')[0].innerHTML = "versi terbaru" ;
+	document.getElementsByClassName('boxes')[1].innerHTML = "versi sebelumnya" ;
+	document.getElementsByClassName('boxes')[2].innerHTML = "versi terlama" ;*/
+
+var boxes = document.getElementsByClassName('boxes');
+	boxes[0].innerHTML = "versi terbaru 1";
+	boxes[1].innerHTML = "versi sebelumnya 2";
+	boxes[2].innerHTML = "versi terlama 3";
+
+document.getElementsByTagName('li')[0].innerHTML = "konten";
+
+var list = document.getElementsByTagName('li');
+list[0].innerHTML = "ganti dulu 1";
+list[1].innerHTML = "pakai selektor var 2";
+list[2].innerHTML = "sekian, trims 3";
+
+document.querySelectorAll('#box1')[0].innerHTML = 'koding 123';
+document.querySelectorAll('.boxes')[0].innerHTML = 'koding 123';
+document.querySelectorAll('ul div')[0].innerHTML = 'koding 123';
+
+</script>
+
+</body>
+</html>

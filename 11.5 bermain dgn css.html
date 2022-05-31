@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> DOM Javasripct </title>
+<style>
+    .merah{
+        background: powderblue;
+    }
+
+
+    .black{
+        border: 2px solid black;
+    }
+</style>
+</head>
+<body>
+<h1> Belajar DOM Javascipt </h1>
+<img src="man.png" width=300 id="gambar" class="black">
+
+<input type="text" value="nama" id="input">
+
+<script>	
+var img = document.getElementById('gambar');
+img.Width = 400;
+
+//img.setAttribute('class', 'merah');
+img.className += ' merah';
+
+var input = document.getElementById('input');
+input.value = "nama lengkap";
+input.style.border = '3px solid blue';
+input.style.backgroundColor = 'yellow';
+</script>
+
+</body>
+</html>
