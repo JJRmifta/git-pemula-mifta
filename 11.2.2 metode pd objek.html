@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Objek pada Javasripct </title>
+</head>
+<body>
+<h1> Objek di Javascipt </h1>
+<img src="man.png" width=300>
+
+Nama :<span id="nama"></span>
+Umur :<span id="umur"></span>
+Sifat :<span id="sifat"></span>
+
+<div id="box"></div>
+<script>
+//membuat objek, key = value
+
+var programer = {
+    nama  : "Jungkook",
+    umur  : 24,
+    sifat : "ga bisa diem",
+    getData : function(){
+        return "Nama: " + this.nama + " Umur: " + this.umur;
+    },
+    setData : function(nama){
+        this.nama = nama;
+    }
+};
+
+//var designer = new Object();
+//designer.nama = "BJ Alex";
+//designer.umur = 27;
+
+//document.getElementById('nama').innerHTML = designer.nama;
+//document.getElementById('umur').innerHTML = designer["umur"];
+//document.getElementById('sifat').innerHTML = programer.sifat;
+
+programer.setData("Ale");
+document.getElementById('box').innerHTML = programer.getData();
+</script>
+
+
+</body>
+</html>
